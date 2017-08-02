@@ -17,7 +17,6 @@
         */
        public function actionIndex()
        {
-           $this->layout ="ajax";
            return $this->render('index');
        }
 
