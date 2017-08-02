@@ -1,0 +1,168 @@
+2017-07-31 11:28:41 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "test". in D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('test', Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test', Array)
+#2 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\wamp64\www\advanced\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "test". in D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('test', Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\wamp64\www\advanced\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-31 11:28:41 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\nishant\\AppData\\Roaming'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SR014'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/nishant/.gnupg'
+    'HISTFILE' => 'c:/Users/nishant/.bash_history'
+    'HOME' => 'c:/Users/nishant'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\nishant'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LOCALAPPDATA' => 'C:\\Users\\nishant\\AppData\\Local'
+    'LOGNAME' => 'nishant'
+    'LOGONSERVER' => '\\\\SR014'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NODE_PATH' => 'C:\\Users\\nishant\\AppData\\Roaming\\npm\\node_modules'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OLDPWD' => 'd:/wamp64/www'
+    'OPENSSL_CONF' => 'C:\\OpenSSL-Win64\\bin\\openssl.cfg'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\nishant\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files\\nodejs\\;d:\\wamp64\\bin\\php\\php7.0.10;c:\\Users\\nishant\\AppData\\Roaming\\Composer\\vendor\\bin;c:\\Users\\nishant\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'd:/wamp64/www/advanced'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '1'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/nishant/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/nishant/AppData/Local/Temp'
+    'USERDOMAIN' => 'SR014'
+    'USERNAME' => 'nishant'
+    'USERPROFILE' => 'C:\\Users\\nishant'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1501500521.7818
+    'REQUEST_TIME' => 1501500521
+    'argv' => [
+        0 => './yii'
+        1 => 'test'
+    ]
+    'argc' => 2
+]
+2017-08-01 05:06:41 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "init". in D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('init', Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#2 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\wamp64\www\advanced\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "init". in D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\wamp64\www\advanced\yii(27): yii\base\Application->run()
+#3 {main}
+2017-08-01 05:06:41 [-][-][-][info][application] $_SERVER = [
+    '!::' => '::\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\nishant\\AppData\\Roaming'
+    'COMMONPROGRAMFILES(X86)' => 'C:\\Program Files (x86)\\Common Files'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMMONPROGRAMW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SR014'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'GNUPGHOME' => 'c:/Users/nishant/.gnupg'
+    'HISTFILE' => 'c:/Users/nishant/.bash_history'
+    'HOME' => 'c:/Users/nishant'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\nishant'
+    'INPUTRC' => 'C:/Program Files (x86)/Git/etc/inputrc'
+    'LESS' => '-FRSX'
+    'LESSCHARSET' => 'utf-8'
+    'LOCALAPPDATA' => 'C:\\Users\\nishant\\AppData\\Local'
+    'LOGNAME' => 'nishant'
+    'LOGONSERVER' => '\\\\SR014'
+    'MAKE_MODE' => 'unix'
+    'MSYSTEM' => 'MINGW32'
+    'NODE_PATH' => 'C:\\Users\\nishant\\AppData\\Roaming\\npm\\node_modules'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OLDPWD' => 'c:/Users/nishant'
+    'OPENSSL_CONF' => 'C:\\OpenSSL-Win64\\bin\\openssl.cfg'
+    'OS' => 'Windows_NT'
+    'PATH' => 'c:\\Users\\nishant\\bin;.;C:\\Program Files (x86)\\Git\\local\\bin;C:\\Program Files (x86)\\Git\\mingw\\bin;C:\\Program Files (x86)\\Git\\bin;c:\\ProgramData\\Oracle\\Java\\javapath;c:\\Windows\\system32;c:\\Windows;c:\\Windows\\System32\\Wbem;c:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;c:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files\\nodejs\\;d:\\wamp64\\bin\\php\\php7.0.10;c:\\Users\\nishant\\AppData\\Roaming\\Composer\\vendor\\bin;c:\\Users\\nishant\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'PROGRAMDATA' => 'C:\\ProgramData'
+    'PROGRAMFILES(X86)' => 'C:\\Program Files (x86)'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROGRAMW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSMODULEPATH' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'd:/wamp64/www/advanced'
+    'SESSIONNAME' => 'Console'
+    'SHLVL' => '1'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'TEMP' => 'C:/Users/nishant/AppData/Local/Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:/Users/nishant/AppData/Local/Temp'
+    'USERDOMAIN' => 'SR014'
+    'USERNAME' => 'nishant'
+    'USERPROFILE' => 'C:\\Users\\nishant'
+    'WINDIR' => 'C:\\Windows'
+    'WINDOWS_TRACING_FLAGS' => '3'
+    'WINDOWS_TRACING_LOGFILE' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1501564001.0638
+    'REQUEST_TIME' => 1501564001
+    'argv' => [
+        0 => './yii'
+        1 => 'init'
+    ]
+    'argc' => 2
+]

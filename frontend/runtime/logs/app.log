@@ -1,0 +1,235 @@
+2017-08-01 06:09:20 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/resetpassword' in D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('resetpassword', Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/resetpassw...', Array)
+#2 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-01 06:09:20 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][info][application] $_GET = [
+    'r' => 'site/resetpassword'
+]
+
+$_COOKIE = [
+    'rxVisitor' => '1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1'
+    'u' => 'e2d14751344565117e41244a90b6c9acd4eac4a7'
+    '_ga' => 'GA1.1.1131588347.1468908411'
+    '__utma' => '96992031.1131588347.1468908411.1495020670.1496316457.16'
+    '__utmz' => '96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'befree-_zldp' => 'MUSHBwUM3MEDrq+Vm/nbierzDrytejm8V5McQakCS2+iAfVPXN0z3e6XNPCwEd4x'
+    'ck_login_id_20' => '1'
+    'ck_login_language_20' => 'en_us'
+    '_identity-frontend' => '60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    '_csrf-backend' => '58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H€_ƒ8È«dJÍ=Ÿ/[—þN[Å>MØ„ýù9T\";}'
+    'advanced-backend' => 'j6qra39ba23i4bnq34rqcn7h62'
+    '_identity-backend' => '57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    'advanced-frontend' => 'mkl1tis5vphn8ci0b7c9k8ppv3'
+    '_csrf-frontend' => '00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k‹þÙ*¤©\'PÝâ´xÅqÀªðÔ×èÞ7Säà¢\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'rxVisitor=1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1; u=e2d14751344565117e41244a90b6c9acd4eac4a7; _ga=GA1.1.1131588347.1468908411; __utma=96992031.1131588347.1468908411.1495020670.1496316457.16; __utmz=96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); befree-_zldp=MUSHBwUM3MEDrq%2BVm%2FnbierzDrytejm8V5McQakCS2%2BiAfVPXN0z3e6XNPCwEd4x; ck_login_id_20=1; ck_login_language_20=en_us; _identity-frontend=60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; _csrf-backend=58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8FH%80_%838%C8%ABd%03J%CD%3D%9F%2F%5B%97%FEN%5B%C5%3EM%8F%D8%84%11%FD%F99T%0B%22%3B%7D; advanced-backend=j6qra39ba23i4bnq34rqcn7h62; _identity-backend=57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; advanced-frontend=mkl1tis5vphn8ci0b7c9k8ppv3; _csrf-frontend=00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%8Fk%8B%FE%11%D9%2A%0C%A4%A9%7F%14%27P%DD%E2%B4x%C5q%C0%AA%F0%D4%D7%E8%DE7S%E4%E0%A2%22%3B%7D'
+    'HTTP_X_DYNATRACE_APPLICATION' => '1%3B1%3B'
+    'HTTP_X_DYNATRACE_ORIGIN_URL' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site/resetpassword'
+    'HTTP_X_DYNATRACE' => 'FW2;666;0;-1767963829;362;2;-1284006574'
+    'HTTP_X_DYNATRACE_REQUESTSTATE' => 'agentId=0x969f034b&pathDepth=1'
+    'HTTP_X_RUXIT_APACHE_SERVERNAMEPORTS' => 'localhost:80'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;D:\\wamp64\\bin\\php\\php7.0.10;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/resetpassword'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site/resetpassword'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501567760.619
+    'REQUEST_TIME' => 1501567760
+]
+2017-08-01 06:10:15 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: token' in D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#3 D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#4 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-08-01 06:10:15 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][info][application] $_GET = [
+    'r' => 'site/reset-password'
+]
+
+$_COOKIE = [
+    'rxVisitor' => '1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1'
+    'u' => 'e2d14751344565117e41244a90b6c9acd4eac4a7'
+    '_ga' => 'GA1.1.1131588347.1468908411'
+    '__utma' => '96992031.1131588347.1468908411.1495020670.1496316457.16'
+    '__utmz' => '96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'befree-_zldp' => 'MUSHBwUM3MEDrq+Vm/nbierzDrytejm8V5McQakCS2+iAfVPXN0z3e6XNPCwEd4x'
+    'ck_login_id_20' => '1'
+    'ck_login_language_20' => 'en_us'
+    '_identity-frontend' => '60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    '_csrf-backend' => '58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H€_ƒ8È«dJÍ=Ÿ/[—þN[Å>MØ„ýù9T\";}'
+    'advanced-backend' => 'j6qra39ba23i4bnq34rqcn7h62'
+    '_identity-backend' => '57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    'advanced-frontend' => 'mkl1tis5vphn8ci0b7c9k8ppv3'
+    '_csrf-frontend' => '00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k‹þÙ*¤©\'PÝâ´xÅqÀªðÔ×èÞ7Säà¢\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'rxVisitor=1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1; u=e2d14751344565117e41244a90b6c9acd4eac4a7; _ga=GA1.1.1131588347.1468908411; __utma=96992031.1131588347.1468908411.1495020670.1496316457.16; __utmz=96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); befree-_zldp=MUSHBwUM3MEDrq%2BVm%2FnbierzDrytejm8V5McQakCS2%2BiAfVPXN0z3e6XNPCwEd4x; ck_login_id_20=1; ck_login_language_20=en_us; _identity-frontend=60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; _csrf-backend=58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8FH%80_%838%C8%ABd%03J%CD%3D%9F%2F%5B%97%FEN%5B%C5%3EM%8F%D8%84%11%FD%F99T%0B%22%3B%7D; advanced-backend=j6qra39ba23i4bnq34rqcn7h62; _identity-backend=57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; advanced-frontend=mkl1tis5vphn8ci0b7c9k8ppv3; _csrf-frontend=00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%8Fk%8B%FE%11%D9%2A%0C%A4%A9%7F%14%27P%DD%E2%B4x%C5q%C0%AA%F0%D4%D7%E8%DE7S%E4%E0%A2%22%3B%7D'
+    'HTTP_X_DYNATRACE_APPLICATION' => '1%3B1%3B'
+    'HTTP_X_DYNATRACE_ORIGIN_URL' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site/reset-password'
+    'HTTP_X_DYNATRACE' => 'FW2;666;0;-1767963829;368;2;-1284006574'
+    'HTTP_X_DYNATRACE_REQUESTSTATE' => 'agentId=0x969f034b&pathDepth=1'
+    'HTTP_X_RUXIT_APACHE_SERVERNAMEPORTS' => 'localhost:80'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;D:\\wamp64\\bin\\php\\php7.0.10;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '50605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/reset-password'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site/reset-password'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501567815.19
+    'REQUEST_TIME' => 1501567815
+]
+2017-08-01 12:07:34 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: token' in D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#3 D:\wamp64\www\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#4 D:\wamp64\www\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\wamp64\www\advanced\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-08-01 12:07:33 [127.0.0.1][-][mkl1tis5vphn8ci0b7c9k8ppv3][info][application] $_GET = [
+    'r' => 'site/reset-password'
+]
+
+$_COOKIE = [
+    'rxVisitor' => '1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1'
+    'u' => 'e2d14751344565117e41244a90b6c9acd4eac4a7'
+    '_ga' => 'GA1.1.1131588347.1468908411'
+    '__utma' => '96992031.1131588347.1468908411.1495020670.1496316457.16'
+    '__utmz' => '96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'befree-_zldp' => 'MUSHBwUM3MEDrq+Vm/nbierzDrytejm8V5McQakCS2+iAfVPXN0z3e6XNPCwEd4x'
+    'ck_login_id_20' => '1'
+    'ck_login_language_20' => 'en_us'
+    '_identity-frontend' => '60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    '_csrf-backend' => '58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"H€_ƒ8È«dJÍ=Ÿ/[—þN[Å>MØ„ýù9T\";}'
+    'advanced-backend' => 'j6qra39ba23i4bnq34rqcn7h62'
+    '_identity-backend' => '57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"qApikfA6VnhogwQ21j77tmZnfs4N6Tex\",2592000]\";}'
+    'advanced-frontend' => 'mkl1tis5vphn8ci0b7c9k8ppv3'
+    '_csrf-frontend' => '00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k‹þÙ*¤©\'PÝâ´xÅqÀªðÔ×èÞ7Säà¢\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'rxVisitor=1473930678625LTMV2KK8DF1O4I95R9ECGS6V501HGFR1; u=e2d14751344565117e41244a90b6c9acd4eac4a7; _ga=GA1.1.1131588347.1468908411; __utma=96992031.1131588347.1468908411.1495020670.1496316457.16; __utmz=96992031.1491802355.2.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); befree-_zldp=MUSHBwUM3MEDrq%2BVm%2FnbierzDrytejm8V5McQakCS2%2BiAfVPXN0z3e6XNPCwEd4x; ck_login_id_20=1; ck_login_language_20=en_us; _identity-frontend=60a1e25ec3dab1abb3070cb01e40665a5047bf312af23ad27ba8d75e71f16c83a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; _csrf-backend=58b252c01cd95f68f20cacc177eba4c0919d7bcac920514aa3141ffe48eb6409a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8FH%80_%838%C8%ABd%03J%CD%3D%9F%2F%5B%97%FEN%5B%C5%3EM%8F%D8%84%11%FD%F99T%0B%22%3B%7D; advanced-backend=j6qra39ba23i4bnq34rqcn7h62; _identity-backend=57db0d36259be098044ff418674b502cc54e79aed3c289ba9dbbf66aa73099b7a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22qApikfA6VnhogwQ21j77tmZnfs4N6Tex%22%2C2592000%5D%22%3B%7D; advanced-frontend=mkl1tis5vphn8ci0b7c9k8ppv3; _csrf-frontend=00cba86ac226115668920073e2567009542f90d324061ee6edcef199220d01bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%8Fk%8B%FE%11%D9%2A%0C%A4%A9%7F%14%27P%DD%E2%B4x%C5q%C0%AA%F0%D4%D7%E8%DE7S%E4%E0%A2%22%3B%7D'
+    'HTTP_X_DYNATRACE_APPLICATION' => '1%3B1%3B'
+    'HTTP_X_DYNATRACE_ORIGIN_URL' => 'http://127.0.0.1/advanced/frontend/web/index.php?r=site/reset-password'
+    'HTTP_X_DYNATRACE' => 'FW2;666;0;-1767963829;730;2;-1284006574'
+    'HTTP_X_DYNATRACE_REQUESTSTATE' => 'agentId=0x969f034b&pathDepth=1'
+    'HTTP_X_RUXIT_APACHE_SERVERNAMEPORTS' => 'localhost:80'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;D:\\wamp64\\bin\\php\\php7.0.10;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '56789'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/reset-password'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site/reset-password'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1501589252.388
+    'REQUEST_TIME' => 1501589252
+]
