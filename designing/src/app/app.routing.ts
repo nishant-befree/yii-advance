@@ -5,7 +5,7 @@ import { NotFoundComponent } from './not-found.component';
 import { AdminComponent } from './admin/admin_login/admin.component';
 import { PracticeloginComponent } from './practice/practicelogin/practicelogin.component';
 import { ClientloginComponent } from './client/clientlogin/clientlogin.component';
-import { FrontendloginComponent } from './frontend/frontendlogin/frontendlogin.component';
+import { FrontendloginComponent } from './frontend/user-authentication/frontendlogin/frontendlogin.component';
 const routes: Routes = [
     {
         path:'frontend',
