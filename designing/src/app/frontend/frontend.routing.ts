@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TeamListComponent } from './team-list/team-list.component';
+import { FrontendloginComponent } from './frontendlogin/frontendlogin.component';
 
 const routes: Routes = [
     { 
         path: '',
-        component: TeamListComponent
+        component: FrontendloginComponent
     },
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class TeamsRoutingModule { }
+export class FrontendRoutingModule { }
