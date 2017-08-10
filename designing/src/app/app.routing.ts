@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-import { PlayerListComponent } from './players/player-list/player-list.component';
 import { NotFoundComponent } from './not-found.component';
 import { AdminComponent } from './admin/admin_login/admin.component';
 import { PracticeloginComponent } from './practice/practicelogin/practicelogin.component';
 import { ClientloginComponent } from './client/clientlogin/clientlogin.component';
+import { FrontendloginComponent } from './frontend/frontendlogin/frontendlogin.component';
 const routes: Routes = [
     {
-        path:'teams',
-        loadChildren: 'app/teams/teams.module#TeamsModule'
+        path:'frontend',
+        loadChildren: 'app/frontend/frontend.module#FrontendModule'
     },
     {
         path:'admin',
@@ -25,7 +25,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        component: PlayerListComponent
+        component: FrontendloginComponent
     },
     {
         path: '',
