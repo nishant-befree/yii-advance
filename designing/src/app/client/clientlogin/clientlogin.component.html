@@ -1,49 +1,49 @@
 
 <div id="login-page" class="row" [@routerTransition]>
-    <div class="col s12 z-depth-4 card-panel">
-        <form class="login-form"  [formGroup]="form" (ngSubmit)="submitForm(form.value)">
-            <div class="row">
-                <div class="input-field col s12 center">
-                    <img src="../assets/images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
-                    <p class="center login-form-text">SuperRecords</p>
-                </div>
-            </div>
-            <div class="row margin">
-                <div class="input-field col s12" [ngClass]="{'has-error':!form.controls['username'].valid &&  form.controls['username'].touched}">
-                    <i class="mdi-social-person-outline prefix"></i>
-                    <input id="username" type="text" [formControl]="form.controls['username']">
-                    <label for="username" class="center-align">Username</label>
-                </div>
-            </div>
-            <div class="row margin">
-                <div class="input-field col s12" [ngClass]="{'has-error':!form.controls['password'].valid && form.controls['password'].touched}">
-                    <i class="mdi-action-lock-outline prefix"></i>
-                    <input id="password" type="password" [formControl]="form.controls['password']">
-                    <label for="password">Password</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12 m12 l12  login-text">
-                    <input type="checkbox" id="remember-me" />
-                    <label for="remember-me">Remember me</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <button class="btn waves-effect waves-light col s12" [disabled]="!form.valid">Login</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s6 m6 l6">
+  <div class="col s12 z-depth-4 card-panel">
+    <form class="login-form"  [formGroup]="form" (ngSubmit)="submitForm(form.value)">
+      <div class="row">
+        <div class="input-field col s12 center">
+          <img src="../assets/images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
+          <p class="center login-form-text">SuperRecords Client</p>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12" [ngClass]="{'has-error':!form.controls['username'].valid &&  form.controls['username'].touched}">
+          <i class="mdi-social-person-outline prefix"></i>
+          <input id="username" type="text" [formControl]="form.controls['username']">
+          <label for="username" class="center-align">Username</label>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12" [ngClass]="{'has-error':!form.controls['password'].valid && form.controls['password'].touched}">
+          <i class="mdi-action-lock-outline prefix"></i>
+          <input id="password" type="password" [formControl]="form.controls['password']">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12  login-text">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <button class="btn waves-effect waves-light col s12" [disabled]="!form.valid">Login</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6 m6 l6">
 
-                </div>
-                <div class="input-field col s6 m6 l6">
-                    <p class="margin right-align medium-small"><a href="#">Forgot password ?</a></p>
-                </div>
-            </div>
+        </div>
+        <div class="input-field col s6 m6 l6">
+          <p class="margin right-align medium-small"><a href="#">Forgot password ?</a></p>
+        </div>
+      </div>
 
-        </form>
-    </div>
+    </form>
+  </div>
 </div>
 
 
