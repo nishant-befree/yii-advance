@@ -12,10 +12,7 @@ const routes: Routes = [
         path:'forgotpassword',
         loadChildren: 'forgotpassword/forgotpassword.module#ForgotpasswordModule'
     },
-    {
-        path: '',
-        component: ForgotpasswordComponent
-    },
+
     {
         path:'frontend',
         loadChildren: 'app/frontend/user-authentication/forgotpassword/forgotpassword.module#ForgotpasswordModule'

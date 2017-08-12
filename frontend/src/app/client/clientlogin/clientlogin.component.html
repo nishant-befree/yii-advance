@@ -1,12 +1,11 @@
-<div class="cyan loaded">
 
-<div id="login-page" class="row">
+<div id="login-page" class="row" [@routerTransition]>
   <div class="col s12 z-depth-4 card-panel">
     <form class="login-form"  [formGroup]="form" (ngSubmit)="submitForm(form.value)">
       <div class="row">
         <div class="input-field col s12 center">
-          <img src="../assets/images/logo.svg" alt="" width="250" height="40">
-          <p class="center login-form-text">Fontend Layout</p>
+          <img src="../assets/images/login-logo.png" alt="" class="circle responsive-img valign profile-image-login">
+          <p class="center login-form-text">SuperRecords Client</p>
         </div>
       </div>
       <div class="row margin">
@@ -39,16 +38,13 @@
 
         </div>
         <div class="input-field col s6 m6 l6">
-          <p class="margin right-align medium-small"><a href="" [routerLink]="['/frontend', 'forgotpassword']">Forgot password ?</a></p>
+          <p class="margin right-align medium-small"><a href="#">Forgot password ?</a></p>
         </div>
       </div>
 
     </form>
   </div>
 </div>
-
-</div>
-
 
 
 <!--
