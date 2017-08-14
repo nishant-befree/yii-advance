@@ -8,8 +8,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
     form;
-    constructor( ) { }
-
+    constructor( private _router : Router ) { }
+    returnUrl: string = '/dashboard';
     ngOnInit() {
         this.form = new FormGroup({
             username: new FormControl("", Validators.required),
@@ -17,6 +17,6 @@ export class LoginComponent implements OnInit {
         });
     }
     submitForm(){
-
+        this._router.navigate([this.returnUrl]);
     }
 }
