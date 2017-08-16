@@ -3,19 +3,45 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { FrontendloginComponent } from './user-authentication/frontendlogin/frontendlogin.component';
 import { ForgotpasswordComponent } from './user-authentication/forgotpassword/forgotpassword.component';
+import { TopbarComponent } from './dashboard/topbar/topbar.component';
 const routes: Routes = [
-    { 
+    {
         path: '',
-        component: FrontendloginComponent
-    },
-    {
-        path:'forgotpassword',
-        loadChildren: 'forgotpassword/forgotpassword.module#ForgotpasswordModule'
-    },
 
-    {
-        path:'frontend',
-        loadChildren: 'app/frontend/user-authentication/forgotpassword/forgotpassword.module#ForgotpasswordModule'
+        data: {
+            title: 'Login'
+        },
+        children: [
+            {
+                path: 'forgotpassword',
+                component: ForgotpasswordComponent,
+                data: {
+                    title: 'Forgot password'
+                }
+            },
+            {
+                path: 'frontendlogin',
+                component: FrontendloginComponent,
+                data: {
+                    title: 'Forgot Login'
+                }
+            },
+            {
+                path: 'dashboard',
+                component: TopbarComponent,
+                data: {
+                    title: 'Forgot Login'
+                }
+            },
+            {
+                path: '',
+                pathMatch: 'full',
+                component: FrontendloginComponent,
+                data: {
+                    title: 'Login'
+                }
+            }
+        ]
     }
 ];
 
