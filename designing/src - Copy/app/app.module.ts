@@ -8,7 +8,7 @@ import {AppRoutingModule} from './app.routing';
 import { LoginComponent } from './login/login.component';
 //for error
 import { P404Component } from './error-pages/404.component';
-//services
+//admin-services
 import { UserService } from './services/user.service';
 
 import {LoginAdminModule } from './admin/admin.module';
