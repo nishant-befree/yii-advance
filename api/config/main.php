@@ -11,7 +11,11 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
+    ],
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -22,7 +26,7 @@ return [
                 'application/json' => 'yii\web\JsonParser',
             ]
         ],
-        'response' => [
+        /*'response' => [
             'format'         => yii\web\Response::FORMAT_JSON,
             'charset'        => 'UTF-8',
             // @todo: move this to a separate event handler class (?)
@@ -56,7 +60,7 @@ return [
                     ];
                 }
             }
-        ],
+        ],*/
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -90,11 +94,64 @@ return [
             'enablePrettyUrl' => true,
             // for debugger showScriptName required to true, need to check in details
             'showScriptName' => false, 
+            //'enableStrictParsing' => true,
+            
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
-                ['class' => 'yii\web\UrlRule', 'pattern' => 'site/<action>', 'route' => 'site/<action>']
+//                [
+//                    'class' => 'yii\rest\UrlRule',
+//                    'controller' => [
+//                        'admin/user',
+//                    ]
+//                ],
             ],
-        ],        
+/*                [
+                    'class' => 'yii\rest\UrlRule',
+                    //'admin' => 'admin/index',
+                    'POST <controller:[\w-]+>s' => '<controller>/create',
+                    '<controller:[\w-]+>s' => '<controller>/index',
+                    'PUT <controller:[\w-]+>/<id:\d+>'    => '<controller>/update',
+                    'DELETE <controller:[\w-]+>/<id:\d+>' => '<controller>/delete',
+                    '<controller:[\w-]+>/<id:\d+>'        => '<controller>/view',
+                ],
+               /* ['class' => 'yii\rest\UrlRule',                    
+                    'controller'    => 'admin/direct',
+                    'pluralize'     => false,
+                    'tokens' => [
+                        '{id}'  => '<id:\d+>',
+                    ],
+                ],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+                ['class' => 'yii\web\UrlRule', 'pattern' => 'site/<action>', 'route' => 'site/<action>'],
+                [
+	                'class'         => 'yii\rest\UrlRule',
+	                'controller'    => 'admin/user',
+	                'pluralize'     => false,
+	                'tokens' => [
+		                '{id}'             => '<id:\d+>',
+	                ],
+	                'extraPatterns' => [
+                                'GET me'            =>  'direct',
+		                /*'OPTIONS {id}'      =>  'options',
+		                'POST login'        =>  'login',
+		                'OPTIONS login'     =>  'options',
+		                'POST signup'       =>  'signup',
+		                'OPTIONS signup'    =>  'options',
+		                'POST confirm'      =>  'confirm',
+		                'OPTIONS confirm'   =>  'options',
+		                'POST password-reset-request'       =>  'password-reset-request',
+		                'OPTIONS password-reset-request'    =>  'options',
+		                'POST password-reset-token-verification'       =>  'password-reset-token-verification',
+		                'OPTIONS password-reset-token-verification'    =>  'options',
+		                'POST password-reset'       =>  'password-reset',
+		                'OPTIONS password-reset'    =>  'options',
+		                'GET me'            =>  'me',
+                                
+		                'POST me'           =>  'me-update',
+		                'OPTIONS me'        =>  'options',
+	                ]
+                ],
+            ],*/
+        ],       
     ],
     'params' => $params,
 ];
