@@ -6,9 +6,10 @@ import { FrontendRoutingModule } from './frontend.routing';
 import { FrontendloginComponent } from './user-authentication/frontendlogin/frontendlogin.component';
 import { ForgotpasswordComponent } from './user-authentication/forgotpassword/forgotpassword.component';
 import { TopbarComponent } from './dashboard/topbar/topbar.component';
+import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 
 @NgModule({
-    declarations: [FrontendloginComponent, ForgotpasswordComponent, TopbarComponent],
+    declarations: [FrontendloginComponent, ForgotpasswordComponent, TopbarComponent, SidebarComponent],
     imports: [CommonModule, ReactiveFormsModule, FrontendRoutingModule]
 })
 export class FrontendModule { }
