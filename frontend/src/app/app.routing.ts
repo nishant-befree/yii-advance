@@ -1,23 +1,43 @@
-/**
- * Created by pankajk on 8/1/2017.
- */
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-// Layouts
-import { LoginComponent } from './login/login';
-import {P404Component} from './error-pages/404.component';
-
-export const routes: Routes = [
+import { P404Component } from './error-pages/404.component';
+import { AdminComponent } from './admin/admin_login/admin.component';
+import { PracticeloginComponent } from './practice/practicelogin/practicelogin.component';
+import { ClientloginComponent } from './client/clientlogin/clientlogin.component';
+import { FrontendloginComponent } from './frontend/user-authentication/frontendlogin/frontendlogin.component';
+const routes: Routes = [
     {
         path: '',
-        component:LoginComponent
+        component:FrontendloginComponent,
+        pathMatch: 'full',
+        loadChildren: 'app/frontend/frontend.module#FrontendModule'
     },
-    { path: '**', component: P404Component }
+    {
+        path:'frontend',
+        loadChildren: 'app/frontend/frontend.module#FrontendModule'
+    },
+    {
+        path:'admin',
+        loadChildren: 'app/admin/admin.module#AdminModule'
+    },
+    {
+        path:'practice',
+        loadChildren: 'app/practice/practice.module#PracticeModule'
+    },
+    {
+        path:'client',
+        loadChildren: 'app/client/client.module#ClientModule'
+    },
+
+    {
+        path: '**',
+        component: P404Component
+    }
 ];
+
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
     exports: [RouterModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }
