@@ -2402,7 +2402,7 @@ a {
   animation: none !important; }
 
 section.content {
-  margin: 100px 15px 0 315px;
+  margin: 100px 15px 0 250px;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -7475,7 +7475,7 @@ fieldset[disabled] .form-control {
   transition: all 0.5s;
   font-family: "Roboto", sans-serif;
   background: #fdfdfd;
-  width: 300px;
+  width: 250px;
   overflow: hidden;
   display: inline-block;
   height: calc(100vh - 70px);
@@ -7517,8 +7517,8 @@ fieldset[disabled] .form-control {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #e9e9e9;
-    background: url("../images/user-img-background.jpg") no-repeat no-repeat;
-    height: 135px; }
+    background: url("../../assets/images/user-img-background.jpg") no-repeat no-repeat;
+    height: 75px; }
     .sidebar .user-info .image {
       margin-right: 12px;
       display: inline-block; }
@@ -7530,9 +7530,8 @@ fieldset[disabled] .form-control {
         vertical-align: bottom !important; }
     .sidebar .user-info .info-container {
       cursor: default;
-      display: block;
-      position: relative;
-      top: 25px; }
+      display: inline-block;
+      position: relative; }
       .sidebar .user-info .info-container .name {
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
@@ -7553,7 +7552,7 @@ fieldset[disabled] .form-control {
         color: #fff; }
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
-        right: -3px;
+        right: -25px;
         bottom: -12px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;

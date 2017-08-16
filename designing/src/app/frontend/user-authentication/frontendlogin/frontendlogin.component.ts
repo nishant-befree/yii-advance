@@ -14,10 +14,7 @@ export class FrontendloginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.form = new FormGroup({
-      username: new FormControl("", Validators.required),
-      password: new FormControl("", Validators.required)
-    });
+
     let body = document.getElementsByTagName('body')[0];
     body.classList.add("login-page");
 

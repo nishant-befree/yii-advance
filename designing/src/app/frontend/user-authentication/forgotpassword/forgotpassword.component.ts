@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-forgotpassword',
   templateUrl: './forgotpassword.component.html',
