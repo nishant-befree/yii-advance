@@ -17,7 +17,7 @@ export class FrontendloginComponent implements OnInit {
   private formErrors:any;
   private submitted:boolean = false;
   private errorMessage:string = '';
-  private returnURL:string = '/dashboard';
+  private returnURL:string = '/pankaj';
 
   //create object for service and controls
   constructor(private userService:UserService,
@@ -102,7 +102,7 @@ export class FrontendloginComponent implements OnInit {
         .subscribe(
             result => {
               if(result.success) {
-                this.router.navigate([this.returnURL]);
+                this.router.navigate(["frontend/dashboard"]);
               } else {
                 this.errorMessage = 'Username or password is incorrect.';
                 this.submitted = false;

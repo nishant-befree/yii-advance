@@ -1,9 +1,15 @@
 <?php
 
 namespace app\models;
+
+require_once '../../vendor/firebase/php-jwt/src/BeforeValidException.php';
+require_once '../../vendor/firebase/php-jwt/src/ExpiredException.php';
+require_once '../../vendor/firebase/php-jwt/src/SignatureInvalidException.php';
+require_once '../../vendor/firebase/php-jwt/src/JWT.php';
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
+
 use Firebase\JWT\JWT;
 use yii\rbac\Permission;
 use yii\web\Request as WebRequest;

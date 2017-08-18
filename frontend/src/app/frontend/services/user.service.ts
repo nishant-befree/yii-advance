@@ -23,7 +23,9 @@ export class UserService {
 
     constructor(private _globalService: GlobalService,
                 private _router: Router,
-                private _authHttp: AuthHttp) {
+                private _authHttp: AuthHttp,
+                private _http: Http,
+    ) {
         this.loggedIn = this.isLoggedIn();
     }
 
@@ -31,7 +33,7 @@ export class UserService {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
 
-        return this._authHttp
+        return this._http
             .post(
                 this._globalService.apiHost + '/user/login',
                 JSON.stringify({
