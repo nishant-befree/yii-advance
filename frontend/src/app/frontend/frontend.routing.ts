@@ -19,6 +19,14 @@ const routes: Routes = [
                 }
             },
             {
+                path: 'frontendlogin',
+                pathMatch: 'full',
+                component: FrontendloginComponent,
+                data: {
+                    title: 'Login'
+                }
+            },
+            {
                 path: '',
                 pathMatch: 'full',
                 component: FrontendloginComponent,

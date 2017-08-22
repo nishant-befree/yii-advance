@@ -10,36 +10,60 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Super Records Portal</title>
-  <link rel="stylesheet" href="assets/css/style_custom.css">
-  <link rel="stylesheet" href="assets/css/waves.css">
-  <link rel="stylesheet" href="assets/css/reponsive.css">
-  <link rel="stylesheet" href="assets/css/style.min.css">
-  <link rel="stylesheet" href="assets/css/custom/custom.min.css">
-  <link rel="stylesheet" href="assets/css/layouts/page-center.css">
-  <link rel="stylesheet" href="assets/js/plugins/prism/prism.css">
-  <link rel="stylesheet" href="assets/js/plugins/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap Core Css -->
+  <link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+  <!-- Waves Effect Css -->
+  <link href="assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
+  <!-- Animation Css -->
+  <link href="assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+  <!-- Custom Css -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 <body>
 <!-- Start Page Loading -->
 <app-root><div id="loader-wrapper">
-  <div id="loader"></div>
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
+  <div class="page-loader-wrapper">
+    <div class="loader">
+      <div class="preloader">
+        <div class="spinner-layer pl-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <p>Please wait...</p>
+    </div>
+  </div>
 </div></app-root>
 
-<!-- End Page Loading -->
-<script src="assets/js/plugins/jquery-1.11.2.min.js"></script>
-<script src="assets/js/materialize.min.js"></script>
-<script src="assets/js/plugins/prism/prism.js"></script>
-<script src="assets/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<script src="assets/js/plugins.min.js"></script>
-<script src="assets/js/custom-script.js"></script>
+<!-- Jquery Core Js -->
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="assets/plugins/node-waves/waves.js"></script>
+
+<!-- Validation Plugin Js -->
+<script src="assets/plugins/jquery-validation/jquery.validate.js"></script>
+
+<!-- Custom Js-->
+<script src="assets/js/pages/examples/sign-in.js"></script>
+<script src="assets/js/pages/examples/forgot-password.js"></script>
 
 </body>
 </html>

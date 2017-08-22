@@ -1,5 +1,6 @@
-import {Injectable} from '@angular/core';
-import {environment} from '../../../environments/environment';
+import { Injectable } from '@angular/core';
+import * as moment from "moment";
+import { environment } from '../../../environments/environment';
 
 
 @Injectable()
@@ -10,9 +11,9 @@ export class GlobalService{
 
     constructor(){
         if(environment.production == true) {
-            this.apiHost = 'http://api.superrecords.web/v1';
+            this.apiHost = 'http://127.0.0.1/yii-advance/admin/';
         } else {
-            this.apiHost = 'http://api.superrecords.local/v1';
+            this.apiHost = 'http://127.0.0.1/yii-advance/api/web/admin';
         }
     }
 

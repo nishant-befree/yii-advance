@@ -23,22 +23,24 @@ export class UserService {
 
     constructor(private _globalService: GlobalService,
                 private _router: Router,
-                private _authHttp: AuthHttp) {
+                private _authHttp: AuthHttp,
+                private _http: Http,
+    ) {
         this.loggedIn = this.isLoggedIn();
     }
-//Check login credential
+
     public login(username, password) {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
 
-        return this._authHttp
+        return this._http
             .post(
                 this._globalService.apiHost + '/user/login',
                 JSON.stringify({
                     "LoginForm": {
-                    "username": username,
-                    "password": password
-                }
+                        "username": username,
+                        "password": password
+                    }
                 }),
                 {headers: headers}
             )
@@ -55,16 +57,163 @@ export class UserService {
             })
             .catch(this.handleError);
     }
-    // When user logout we will remove token in localstorage
+
+    public signup(username, email, password) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json; charset=UTF-8');
+
+        return this._authHttp
+            .post(
+                this._globalService.apiHost + '/user/signup',
+                JSON.stringify({
+                    "SignupForm": {
+                        "username": username,
+                        "email": email,
+                        "password": password
+                    }
+                }),
+                {headers: headers}
+            )
+            .map(response => response.json())
+            .map((response) => {
+                if (response.success) {
+                } else {
+                }
+                return response;
+            })
+            .catch(this.handleError);
+    }
+
+    public signupConfirm(id, auth_key) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json; charset=UTF-8');
+
+        return this._authHttp
+            .post(
+                this._globalService.apiHost + '/user/confirm',
+                JSON.stringify({
+                    "SignupConfirmForm": {
+                        "id": id,
+                        "auth_key": auth_key,
+                    }
+                }),
+                {headers: headers}
+            )
+            .map(response => response.json())
+            .map((response) => {
+                if (response.success) {
+                } else {
+                }
+                return response;
+            })
+            .catch(this.handleError);
+    }
+
+    public passwordResetRequest(email) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json; charset=UTF-8');
+
+        return this._authHttp
+            .post(
+                this._globalService.apiHost + '/user/password-reset-request',
+                JSON.stringify({
+                    "PasswordResetRequestForm": {
+                        "email": email
+                    }
+                }),
+                {headers: headers}
+            )
+            .map(response => response.json())
+            .map((response) => {
+                if (response.success) {
+                } else {
+                }
+                return response;
+            })
+            .catch(this.handleError);
+    }
+
+
+    public passwordResetTokenVerification(token) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json; charset=UTF-8');
+
+        return this._authHttp
+            .post(
+                this._globalService.apiHost + '/user/password-reset-token-verification',
+                JSON.stringify({
+                    "PasswordResetTokenVerificationForm": {
+                        "token": token,
+                    }
+                }),
+                {headers: headers}
+            )
+            .map(response => response.json())
+            .map((response) => {
+                if (response.success) {
+                } else {
+                }
+                return response;
+            })
+            .catch(this.handleError);
+    }
+
+    public passwordReset(token, password) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json; charset=UTF-8');
+
+        return this._authHttp
+            .post(
+                this._globalService.apiHost + '/user/password-reset',
+                JSON.stringify({
+                    "PasswordResetForm": {
+                        "token": token,
+                        "password": password
+                    }
+                }),
+                {headers: headers}
+            )
+            .map(response => response.json())
+            .map((response) => {
+                if (response.success) {
+                } else {
+                }
+                return response;
+            })
+            .catch(this.handleError);
+    }
+
     public logout(): void {
         localStorage.removeItem('frontend-token');
         this.loggedIn = false;
     }
-    //Check user log in
+
+    public getToken(): any {
+        return localStorage.getItem('frontend-token');
+    }
+
+    private checkToken(): any {
+        return !!localStorage.getItem('frontend-token');
+    }
+
+    public unauthorizedAccess(error: any): void {
+        this.logout();
+        this._router.navigate(['/login']);
+    }
+
     public isLoggedIn(): boolean {
         return tokenNotExpired('frontend-token');
     }
-    // Handle Connection error function
+
+    public getJWTValue(): any{
+        if(this.isLoggedIn()) {
+            let token = this.getToken();
+            return this.jwtHelper.decodeToken(token);
+        } else {
+            return null;
+        }
+    }
+
     private handleError(error: Response | any) {
 
         let errorMessage: any = {};

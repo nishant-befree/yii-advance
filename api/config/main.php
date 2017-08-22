@@ -26,7 +26,7 @@ return [
                 'application/json' => 'yii\web\JsonParser',
             ]
         ],
-        /*'response' => [
+       /* 'response' => [
             'format'         => yii\web\Response::FORMAT_JSON,
             'charset'        => 'UTF-8',
             // @todo: move this to a separate event handler class (?)
@@ -35,6 +35,7 @@ return [
 
                 // Because Yii2 CORS doesn't handle this 
                 // @todo file a bug for this
+				$response->headers['Access-Control-Allow-Origin'] = '*';
                 $response->headers['Access-Control-Allow-Headers'] = 'x-auth-token, Content-Type';
                 $response->headers['Access-Control-Request-Method'] = 'GET, POST, PUT, OPTIONS, HEAD';
 
@@ -97,24 +98,9 @@ return [
             //'enableStrictParsing' => true,
             
             'rules' => [
-//                [
-//                    'class' => 'yii\rest\UrlRule',
-//                    'controller' => [
-//                        'admin/user',
-//                    ]
-//                ],
-            ],
-/*                [
-                    'class' => 'yii\rest\UrlRule',
-                    //'admin' => 'admin/index',
-                    'POST <controller:[\w-]+>s' => '<controller>/create',
-                    '<controller:[\w-]+>s' => '<controller>/index',
-                    'PUT <controller:[\w-]+>/<id:\d+>'    => '<controller>/update',
-                    'DELETE <controller:[\w-]+>/<id:\d+>' => '<controller>/delete',
-                    '<controller:[\w-]+>/<id:\d+>'        => '<controller>/view',
-                ],
-               /* ['class' => 'yii\rest\UrlRule',                    
-                    'controller'    => 'admin/direct',
+//                
+                ['class' => 'yii\rest\UrlRule',                    
+                    'controller'    => 'admin/user',
                     'pluralize'     => false,
                     'tokens' => [
                         '{id}'  => '<id:\d+>',
@@ -131,7 +117,7 @@ return [
 	                ],
 	                'extraPatterns' => [
                                 'GET me'            =>  'direct',
-		                /*'OPTIONS {id}'      =>  'options',
+		                'OPTIONS {id}'      =>  'options',
 		                'POST login'        =>  'login',
 		                'OPTIONS login'     =>  'options',
 		                'POST signup'       =>  'signup',
@@ -150,8 +136,41 @@ return [
 		                'OPTIONS me'        =>  'options',
 	                ]
                 ],
-            ],*/
-        ],       
+            ],
+        ],   
+        'response' => [
+            'class' => 'yii\web\Response',
+            'on beforeSend' => function ($event) {
+
+                $response = $event->sender;
+                if($response->format == 'html') {
+                    return $response;
+                }
+
+                $responseData = $response->data;
+
+                if(is_string($responseData) && json_decode($responseData)) {
+                    $responseData = json_decode($responseData, true);
+                }
+
+
+                if($response->statusCode >= 200 && $response->statusCode <= 299) {
+                    $response->data = [
+                        'success'   => true,
+                        'status'    => $response->statusCode,
+                        'data'      => $responseData,
+                    ];
+                } else {
+                    $response->data = [
+                        'success'   => false,
+                        'status'    => $response->statusCode,
+                        'data'      => $responseData,
+                    ];
+
+                }
+                return $response;
+            },
+        ],
     ],
     'params' => $params,
 ];
