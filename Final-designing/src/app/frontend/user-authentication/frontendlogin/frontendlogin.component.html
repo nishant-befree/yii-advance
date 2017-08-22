@@ -1,0 +1,105 @@
+
+<div class="page">
+  <div class="page-content">
+    <div class="page-brand-info">
+      <div class="brand">
+        <img class="brand-img" src="../../../../assets/images/logo.svg" alt="..." width="300">
+      </div>
+      <p class="font-size-20">At Super Records, we believe that outsourcing should be as quick & easy as plugging in an extension. Our service model is built on the pillars of flexibility, reliability and accountability.</p>
+    </div>
+
+    <div class="page-login-main">
+      <div class="brand visible-xs">
+        <img class="brand-img" src="../../../../assets/images/logo.svg" alt="..." width="300">
+        <h3 class="brand-text font-size-40">SuperRecords</h3>
+      </div>
+      <h3 class="font-size-24">Sign In</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <form [formGroup]="form">
+        <div class="form-group form-material floating">
+          <input type="email" class="form-control empty" id="inputEmail" name="email">
+          <label class="floating-label" for="inputEmail">Email</label>
+        </div>
+        <div class="form-group form-material floating">
+          <input type="password" class="form-control empty" id="inputPassword" name="password">
+          <label class="floating-label" for="inputPassword">Password</label>
+        </div>
+        <div class="form-group clearfix">
+          <div class="checkbox-custom checkbox-inline checkbox-primary pull-left">
+            <input type="checkbox" id="remember" name="checkbox">
+            <label for="inputCheckbox">Remember me</label>
+          </div>
+          <a class="pull-right" [routerLink]="['/frontend', 'forgotpassword']">Forgot password?</a><br/>
+          <a class="pull-right" [routerLink]="['/frontend', 'dashboard']">Dashboard</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+      </form>
+
+
+
+      <footer class="page-copyright">
+        <p>PORTAL BY Superrecords</p>
+        <p>© 2017. All RIGHT RESERVED.</p>
+        <div class="social">
+          <a class="btn btn-icon btn-round social-twitter" href="javascript:void(0)">
+            <i class="icon bd-twitter" aria-hidden="true"></i>
+          </a>
+          <a class="btn btn-icon btn-round social-facebook" href="javascript:void(0)">
+            <i class="icon bd-facebook" aria-hidden="true"></i>
+          </a>
+          <a class="btn btn-icon btn-round social-google-plus" href="javascript:void(0)">
+            <i class="icon bd-google-plus" aria-hidden="true"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+</div>
+<!--<div class="login-box">
+  <div class="logo">
+    <a href="javascript:void(0);"> <img src="../assets/images/logo.svg" alt="" width="250" height="40"></a>
+
+  </div>
+  <div class="card">
+    <div class="body">
+      <form id="sign_in" [formGroup]="form">
+        <div class="msg">Sign in to start your session</div>
+        <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+          <div class="form-line">
+            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+          </div>
+        </div>
+        <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+          <div class="form-line">
+            <input type="password" class="form-control" name="password" placeholder="Password" required autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 p-t-5">
+            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-green">
+            <label for="rememberme">Remember Me</label>
+          </div>
+          <div class="col-xs-4">
+            <button class="btn btn-block bg-green waves-effect" type="submit">SIGN IN</button>
+          </div>
+        </div>
+        <div class="row m-t-15 m-b--20">
+          <div class="col-xs-6">
+            <a [routerLink]="['/frontend', 'dashboard']">Dashboard</a>
+          </div>
+          <div class="col-xs-6 align-right">
+            <a [routerLink]="['/frontend', 'forgotpassword']">Forgot Password?</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>-->
