@@ -1,0 +1,124 @@
+<div class="site-menubar">
+    <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu">
+                    <li class="site-menu-category">Hemadri Patel</li>
+                    <li class="site-menu-item">
+                        <a class="" href="javascript:void(0)">
+                            <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
+                            <span class="site-menu-title">Practice</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="" [routerLink]="['/frontend', 'practice']">
+                                    <span class="site-menu-title">Manage Practice</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Manage Draft Practice</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
+                            <span class="site-menu-title">Billing</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Draft Invoice</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Billing Action</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Ready to send</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Waiting for approval</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Dismiss invoice</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub active open">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-google-pages" aria-hidden="true"></i>
+                            <span class="site-menu-title">Client</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item has-sub">
+                                <a href="javascript:void(0)">
+                                    <span class="site-menu-title">item1</span>
+                                    <span class="site-menu-arrow"></span>
+                                </a>
+                                <ul class="site-menu-sub">
+                                    <li class="site-menu-item">
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="site-menu-title">item2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-category">Latest tab</li>
+                    <li class="site-menu-item">
+                        <a class="" href="javascript:void(0)">
+                            <i class="site-menu-icon md-google-pages" aria-hidden="true"></i>
+                            <span class="site-menu-title">New Item</span>
+                            <div class="site-menu-label">
+                                <span class="label label-danger label-round">new</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-menubar-footer">
+        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+           data-original-title="Settings">
+            <span class="icon md-settings" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+            <span class="icon md-eye-off" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+            <span class="icon md-power" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+<!-- Page -->
+<div class="page animsition">
+    <router-outlet></router-outlet>
+
+</div>
