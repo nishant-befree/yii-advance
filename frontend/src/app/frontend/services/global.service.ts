@@ -13,7 +13,7 @@ export class GlobalService{
         if(environment.production == true) {
             this.apiHost = 'http://127.0.0.1/yii-advance/admin/';
         } else {
-            this.apiHost = 'http://127.0.0.1/yii-advance/api/web/admin';
+            this.apiHost = 'http://api.smsfrecords.local/admin';
         }
     }
 

@@ -10,11 +10,15 @@ export class ForgotpasswordComponent implements OnInit {
 
   ngOnInit() {
     let body = document.getElementsByTagName('body')[0];
-    body.classList.add("fp-page");
+    body.classList.add("page-login-v2");
+    body.classList.add("layout-full");
+    body.classList.add("page-dark");
   }
   ngOnDestroy() {
     let body = document.getElementsByTagName('body')[0];
-    body.classList.remove("fp-page");
+    body.classList.add("page-login-v2");
+    body.classList.add("layout-full");
+    body.classList.add("page-dark");
   }
 
 }

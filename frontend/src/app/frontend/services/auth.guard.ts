@@ -6,7 +6,7 @@ import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, CanAc
 import { UserService } from './user.service';
 
 @Injectable()
-export class AuthService implements CanActivate, CanActivateChild {
+export class AuthGuard implements CanActivate, CanActivateChild {
     constructor(private userService: UserService, private router:Router) {}
 
     canActivate(route:ActivatedRouteSnapshot, state:RouterStateSnapshot):boolean {

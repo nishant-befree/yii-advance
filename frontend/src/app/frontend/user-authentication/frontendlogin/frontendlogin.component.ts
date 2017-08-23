@@ -34,18 +34,25 @@ export class FrontendloginComponent implements OnInit {
 
   //On load function
   ngOnInit() {
+    let body = document.getElementsByTagName('body')[0];
+    body.classList.add("page-login-v2");
+    body.classList.add("layout-full");
+    body.classList.add("page-dark");
     this._resetFormErrors();
     this.userService.logout();
+    var token = localStorage.getItem('jwt');
+
 
     // get return url from route parameters or default to '/'
     this.returnURL = this.activatedRoute.snapshot.queryParams['r'] || '/';
-    let body = document.getElementsByTagName('body')[0];
-    body.classList.add("login-page");
+
   }
 
   ngOnDestroy() {
     let body = document.getElementsByTagName('body')[0];
-    body.classList.remove("login-page");
+    body.classList.add("page-login-v2");
+    body.classList.add("layout-full");
+    body.classList.add("page-dark");
   }
 
   //check form error

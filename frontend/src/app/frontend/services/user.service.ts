@@ -1,18 +1,18 @@
 /**
  * Created by pankajk on 8/2/2017.
  */
-import {Injectable} from '@angular/core';
-import {Http, Headers, Response} from '@angular/http';
+import { Injectable } from '@angular/core';
+import { Http, Headers, Response } from '@angular/http';
 
 import {GlobalService} from './global.service';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
-import {Observable} from 'rxjs/Rx';
-import {Router} from "@angular/router";
+import { Observable } from 'rxjs/Rx';
+import { Router } from "@angular/router";
 
-import {tokenNotExpired} from 'angular2-jwt';
-import {AuthHttp, JwtHelper} from 'angular2-jwt';
+import { tokenNotExpired } from 'angular2-jwt';
+import { AuthHttp, JwtHelper } from 'angular2-jwt';
 
 
 @Injectable()
@@ -24,16 +24,16 @@ export class UserService {
     constructor(private _globalService: GlobalService,
                 private _router: Router,
                 private _authHttp: AuthHttp,
-                private _http: Http,
     ) {
         this.loggedIn = this.isLoggedIn();
     }
 
     public login(username, password) {
+
         let headers = new Headers();
         headers.append('Content-Type', 'application/json; charset=UTF-8');
 
-        return this._http
+        var val = this._authHttp
             .post(
                 this._globalService.apiHost + '/user/login',
                 JSON.stringify({
@@ -56,6 +56,8 @@ export class UserService {
                 return response;
             })
             .catch(this.handleError);
+//console.log(val);
+        return val;
     }
 
     public signup(username, email, password) {
