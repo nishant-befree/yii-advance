@@ -1,0 +1,699 @@
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="site-navbar navbar navbar-inverse navbar-fixed-top navbar-mega" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+                data-toggle="menubar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+                data-toggle="collapse">
+            <i class="icon md-more" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+            <img class="navbar-brand-logo" src="../../../../assets/images/sr_ico.png" title="logo">
+            <span class="navbar-brand-text hidden-xs">SuperReords</span>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-search"
+                data-toggle="collapse">
+            <span class="sr-only">Toggle Search</span>
+            <i class="icon md-search" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+            <!-- Navbar Toolbar -->
+            <ul class="nav navbar-toolbar">
+                <li class="hidden-float" id="toggleMenubar">
+                    <a data-toggle="menubar" href="#" role="button">
+                        <i class="icon hamburger hamburger-arrow-left">
+                            <span class="sr-only">Toggle menubar</span>
+                            <span class="hamburger-bar"></span>
+                        </i>
+                    </a>
+                </li>
+                <li class="hidden-xs" id="toggleFullscreen">
+                    <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                        <span class="sr-only">Toggle fullscreen</span>
+                    </a>
+                </li>
+                <li class="hidden-float">
+                    <a class="icon md-search" data-toggle="collapse" href="#" data-target="#site-navbar-search"
+                       role="button">
+                        <span class="sr-only">Toggle Search</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Navbar Toolbar -->
+
+            <!-- Navbar Toolbar Right -->
+            <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up"
+                       aria-expanded="false" role="button">
+                        <span class="flag-icon flag-icon-us"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem">
+                                <span class="flag-icon flag-icon-gb"></span> English</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem">
+                                <span class="flag-icon flag-icon-fr"></span> French</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem">
+                                <span class="flag-icon flag-icon-cn"></span> Chinese</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem">
+                                <span class="flag-icon flag-icon-de"></span> German</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem">
+                                <span class="flag-icon flag-icon-nl"></span> Dutch</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
+                       data-animation="scale-up" role="button">
+              <span class="avatar avatar-online">
+                <img src="../../../../assets/images/user.png" alt="...">
+                <i></i>
+              </span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Settings</a>
+                        </li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="presentation">
+                            <a [routerLink]="['/frontend', 'frontendlogin']" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="javascript:void(0)" title="Notifications" aria-expanded="false"
+                       data-animation="scale-up" role="button">
+                        <i class="icon md-notifications" aria-hidden="true"></i>
+                        <span class="badge badge-danger up">5</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                        <li class="dropdown-menu-header" role="presentation">
+                            <h5>NOTIFICATIONS</h5>
+                            <span class="label label-round label-danger">New 5</span>
+                        </li>
+
+                        <li class="list-group" role="presentation">
+                            <div data-role="container">
+                                <div data-role="content">
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                                                <i class="icon md-receipt bg-red-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Lorem ipsume dummy data</h6>
+                                                <time class="media-meta">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                                                <i class="icon md-account bg-green-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Lorem ipsume dummy data</h6>
+                                                <time class="media-meta">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                                                <i class="icon md-settings bg-red-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Lorem ipsume dummy data</h6>
+                                                <time class="media-meta">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                                                <i class="icon md-calendar bg-blue-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Lorem ipsume dummy data</h6>
+                                                <time class="media-meta">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                                                <i class="icon md-comment bg-orange-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Lorem ipsume dummy data</h6>
+                                                <time class="media-meta">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-footer" role="presentation">
+                            <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                <i class="icon md-settings" aria-hidden="true"></i>
+                            </a>
+                            <a href="javascript:void(0)" role="menuitem">
+                                All notifications
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="javascript:void(0)" title="Messages" aria-expanded="false"
+                       data-animation="scale-up" role="button">
+                        <i class="icon md-email" aria-hidden="true"></i>
+                        <span class="badge badge-info up">3</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                        <li class="dropdown-menu-header" role="presentation">
+                            <h5>MESSAGES</h5>
+                            <span class="label label-round label-info">New 3</span>
+                        </li>
+
+                        <li class="list-group" role="presentation">
+                            <div data-role="container">
+                                <div data-role="content">
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                          <span class="avatar avatar-sm avatar-online">
+                            <img src="../../../../assets/images/user.png" alt="..." />
+                            <i></i>
+                          </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Hemadri Patel</h6>
+                                                <div class="media-meta">
+                                                    <time datetime="2015-06-17T20:22:05+08:00">30 minutes ago</time>
+                                                </div>
+                                                <div class="media-detail">Anyways, i would like just do it</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                          <span class="avatar avatar-sm avatar-off">
+                            <img src="../../../../assets/images/user.png" alt="..." />
+                            <i></i>
+                          </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Pankaj Nahar</h6>
+                                                <div class="media-meta">
+                                                    <time datetime="2015-06-17T12:30:30+08:00">12 hours ago</time>
+                                                </div>
+                                                <div class="media-detail">Please check Documents</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                          <span class="avatar avatar-sm avatar-busy">
+                            <img src="../../../../assets/images/user.png" alt="..." />
+                            <i></i>
+                          </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Nishant Bhatt</h6>
+                                                <div class="media-meta">
+                                                    <time datetime="2015-06-16T18:38:40+08:00">2 days ago</time>
+                                                </div>
+                                                <div class="media-detail">Lorem ipsum Dummt text</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="media-left padding-right-10">
+                          <span class="avatar avatar-sm avatar-busy">
+                            <img src="../../../../assets/images/user.png" alt="..." />
+                            <i></i>
+                          </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Nishant Bhatt</h6>
+                                                <div class="media-meta">
+                                                    <time datetime="2015-06-16T18:38:40+08:00">2 days ago</time>
+                                                </div>
+                                                <div class="media-detail">Lorem ipsum Dummt text</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-footer" role="presentation">
+                            <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                <i class="icon md-settings" aria-hidden="true"></i>
+                            </a>
+                            <a href="javascript:void(0)" role="menuitem">
+                                See all messages
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="toggleChat">
+                    <a data-toggle="site-sidebar" href="javascript:void(0)" title="Chat">
+                        <i class="icon md-comment" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+
+    </div>
+</nav>
+
+
+<div class="site-menubar">
+    <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu">
+                    <li class="site-menu-category">{{userData.username}}</li>
+                    <li class="site-menu-item">
+                        <a class="" href="javascript:void(0)" [routerLink]="['/frontend', 'dashboard']">
+                            <i class="site-menu-icon md-view-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)" [routerLink]="['/frontend', 'practice']">
+                            <i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
+                            <span class="site-menu-title">Practice</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="" [routerLink]="['/frontend', 'practice']">
+                                    <span class="site-menu-title">Manage Practice</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Manage Draft Practice</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site-menu-item has-sub">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-view-compact" aria-hidden="true"></i>
+                            <span class="site-menu-title">Billing</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Draft Invoice</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Billing Action</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Ready to send</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Waiting for approval</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="" href="javascript:void(0)">
+                                    <span class="site-menu-title">Dismiss invoice</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub active open">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon md-google-pages" aria-hidden="true"></i>
+                            <span class="site-menu-title">Client</span>
+                            <span class="site-menu-arrow"></span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item has-sub">
+                                <a href="javascript:void(0)">
+                                    <span class="site-menu-title">item1</span>
+                                    <span class="site-menu-arrow"></span>
+                                </a>
+                                <ul class="site-menu-sub">
+                                    <li class="site-menu-item">
+                                        <a class="" href="javascript:void(0)">
+                                            <span class="site-menu-title">item2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-category">Latest tab</li>
+                    <li class="site-menu-item">
+                        <a class="" href="javascript:void(0)">
+                            <i class="site-menu-icon md-google-pages" aria-hidden="true"></i>
+                            <span class="site-menu-title">New Item</span>
+                            <div class="site-menu-label">
+                                <span class="label label-danger label-round">new</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-menubar-footer">
+        <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+           data-original-title="Settings">
+            <span class="icon md-settings" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Lock">
+            <span class="icon md-eye-off" aria-hidden="true"></span>
+        </a>
+        <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Logout">
+            <span class="icon md-power" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+
+<!-- Main content -->
+<!-- Page -->
+<div class="page">
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="page-header">
+        <h1 class="page-title">Dashboard</h1>
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+        <div class="page-header-actions">
+            <button type="button" class="btn btn-sm btn-primary btn-round">
+                <span class="text hidden-xs">Settings</span>
+                <i class="icon md-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="page-content container-fluid">
+        <div class="row" data-plugin="masonry">
+            <div class="col-md-6 col-xs-12 masonry-item">
+                <!-- Panel To Do List -->
+                <div class="panel" id="todo-list">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">To Do List</h3>
+                    </div>
+                    <ul class="list-task list-group" data-role="tasklist">
+                        <li class="list-group-item task-done" data-role="task">
+                            <div class="checkbox-custom checkbox-primary">
+                                <input type="checkbox" id="inputSchedule" name="inputCheckboxesSchedule" checked>
+                                <label for="inputSchedule">
+                                    <i class="icon md-calendar" aria-hidden="true"></i>
+                                    <span>Schedule meeting</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" data-role="task">
+                            <div class="checkbox-custom checkbox-primary">
+                                <input type="checkbox" id="inputCall" name="inputCheckboxesCall">
+                                <label for="inputCall">
+                                    <i class="icon md-notifications" aria-hidden="true"></i>
+                                    <span>Call clients for follow-up</span>
+                                    <span class="label label-danger">Today</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" data-role="task">
+                            <div class="checkbox-custom checkbox-primary">
+                                <input type="checkbox" id="inputBook" name="inputCheckboxesBook">
+                                <label for="inputBook">
+                                    <i class="icon md-calendar" aria-hidden="true"></i>
+                                    <span>Lorem ipsume</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" data-role="task">
+                            <div class="checkbox-custom checkbox-primary">
+                                <input type="checkbox" id="inputForward" name="inputCheckboxesForward">
+                                <label for="inputForward">
+                                    <span>Forward important tasks</span>
+                                    <span class="label label-primary">2 weeks</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" data-role="task">
+                            <div class="checkbox-custom checkbox-primary">
+                                <input type="checkbox" id="inputRecieve" name="inputCheckboxesRecieve">
+                                <label for="inputRecieve">
+                                    <span>Recieve Documents</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Panel To Do List -->
+            </div>
+
+            <div class="col-md-6 col-xs-12 masonry-item">
+                <!-- Panel Tasks -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Dummy Data</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                            <tr>
+                                <th>item1 #</th>
+                                <th>item2</th>
+                                <th>item3</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-success">status</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-warning">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-info">Processing</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-success">status</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-warning">Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dummy data</td>
+                                <td>25</td>
+                                <td>
+                                    <span class="label label-info">Processing</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Panel Tasks -->
+            </div>
+            <div class="col-md-6 col-xs-12 masonry-item">
+                <!-- Panel Projects -->
+                <div class="panel" id="projects">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Projects</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <td>item1</td>
+                                <td>item2</td>
+                                <td>Date</td>
+                                <td>Actions</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr> <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr> <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr> <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr> <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr> <tr>
+                                <td>Dummy value text</td>
+                                <td>
+                                    <span data-plugin="peityPie" data-skin="red">20</span>
+                                </td>
+                                <td>Jan 1, 2017</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Edit">
+                                        <i class="icon md-wrench" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-default"
+                                            data-toggle="tooltip" data-original-title="Delete">
+                                        <i class="icon md-close" aria-hidden="true"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Panel Projects -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a href="#">SMSF Records</a></div>
+    <div class="site-footer-right">
+        Superrecords
+    </div>
+
+</footer>

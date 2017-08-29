@@ -7,9 +7,9 @@ import {HttpModule} from '@angular/http';
 import { FrontendRoutingModule } from './frontend.routing';
 import { FrontendloginComponent } from './user-authentication/frontendlogin/frontendlogin.component';
 import { ForgotpasswordComponent } from './user-authentication/forgotpassword/forgotpassword.component';
-import { TopbarComponent } from './dashboard/topbar/topbar.component';
-import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
-import { PracticeProfileComponent } from './practice/practice-profile/practice-profile.component';
+import { ForgotpasswordRequestComponent } from './user-authentication/forgotpassword_request/forgotpassword_request.component';
+import {FullLayoutComponent} from './layouts/full-layout.component';
+import {SimpleLayoutComponent}  from './layouts/simple-layout.component';
 // Model & Services
 import { AuthGuard } from './services/auth.guard';
 import { GlobalService } from './services/global.service';
@@ -21,9 +21,9 @@ import { SharedModule } from './shared/shared.module';
     declarations: [
         FrontendloginComponent,
         ForgotpasswordComponent,
-        TopbarComponent,
-        SidebarComponent,
-        PracticeProfileComponent
+        ForgotpasswordRequestComponent,
+        FullLayoutComponent,
+        SimpleLayoutComponent
     ],
     imports: [
         CommonModule,

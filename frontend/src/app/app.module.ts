@@ -7,15 +7,12 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { P404Component } from './error-pages/404.component';
-import { MainNavigationComponent } from './main-navigation/main-navigation.component';
 import { FrontendModule } from './frontend/frontend.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     P404Component,
-    MainNavigationComponent,
-
   ],
   imports: [
     BrowserModule,
