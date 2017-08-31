@@ -9,7 +9,7 @@ import {SimpleLayoutComponent}  from './layouts/simple-layout.component';
 import {AuthGuard} from './services/auth.guard';
 
 const routes: Routes = [
-    {
+   {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full',
@@ -52,7 +52,7 @@ const routes: Routes = [
                 }
             },
             {
-                path: 'frontendlogin',
+                path: 'login',
                 pathMatch: 'full',
                 component: FrontendloginComponent,
                 data: {

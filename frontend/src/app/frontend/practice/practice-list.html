@@ -1,0 +1,41 @@
+<!--<div class="container">
+
+    <h2>{{title}}</h2>
+
+    <div class="pagination-data">
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Last name</th>
+            </tr>
+            <tr *ngFor = ' let user of users | paginate : { itemsPerPage:5, currentPage:page, id : 1, totalItems:15 } ' >
+                <td>{{user.query_type}}</td>
+                <td>{{user.id}}</td>
+            </tr>
+        </table>
+
+        <pagination-controls
+                (pageChange) = "page = getServerData($event)"
+                id="1"
+                maxSize = "3"
+                directionLinks = "true"
+                autohide = "true"
+        >
+        </pagination-controls>
+
+    </div>
+<my-datatable>Loading...</my-datatable>-->
+    <table id="myTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Last name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor = ' let user of users' >
+            <td>{{user.user_fname}}</td>
+            <td>{{user.user_lname}}</td>
+        </tr>
+        </tbody>
+    </table>

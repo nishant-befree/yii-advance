@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PracticeProfileComponent } from './practice-profile.component';
+import { PracticeListComponent } from './practice-list.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
     children: [
       {
         path: 'list',
-        component: PracticeProfileComponent,
+        component: PracticeListComponent,
         data: {
           title: 'List',
         }

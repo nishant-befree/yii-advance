@@ -9,6 +9,11 @@ import { FrontendloginComponent } from './frontend/user-authentication/frontendl
 const routes: Routes = [
     {
         path: '',
+        redirectTo: 'frontend',
+        pathMatch: 'full',
+    },
+    {
+        path: '',
         component:FrontendloginComponent,
         pathMatch: 'full',
         loadChildren: 'app/frontend/frontend.module#FrontendModule'
@@ -37,7 +42,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

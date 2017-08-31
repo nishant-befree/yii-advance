@@ -26,7 +26,7 @@ export class FrontendloginComponent implements OnInit {
               private formBuilder:FormBuilder) {
     this.frontendLoginForm = formBuilder.group({
       username: ['', Validators.required],
-      password: ['', Validators.compose([Validators.required, Validators.minLength(6)])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
     });
     this.frontendLoginForm.valueChanges
         .subscribe(data => this.onValueChanged(data));
@@ -109,7 +109,7 @@ export class FrontendloginComponent implements OnInit {
         .subscribe(
             result => {
               if(result.success) {
-                this.router.navigate(["frontend/dashboard"]);
+                this.router.navigate(["/frontend/dashboard"]);
               } else {
                 this.errorMessage = 'Username or password is incorrect.';
                 this.submitted = false;

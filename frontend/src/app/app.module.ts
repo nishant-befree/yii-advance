@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { P404Component } from './error-pages/404.component';
 import { FrontendModule } from './frontend/frontend.module';
 
+import {Ng2PaginationModule} from 'ng2-pagination';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import { FrontendModule } from './frontend/frontend.module';
     AppRoutingModule,
     FrontendModule,
     HttpModule,
-
+    Ng2PaginationModule
   ],
   providers: [
 
