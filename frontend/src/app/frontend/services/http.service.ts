@@ -10,7 +10,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class HttpService {
 
-	private BASE_URL:string = 'http://127.0.0.1/advanced/frontend/web/v1/user';
+	private BASE_URL:string = 'http://dev.befreecrm.com.au/yiiapp/pbackend/web/bucket';
 	
 	constructor(
 		private http:Http

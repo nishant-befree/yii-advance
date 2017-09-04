@@ -11,10 +11,10 @@ export class GlobalService{
 
     constructor(){
         if(environment.production == true) {
-            this.apiHost = 'http://127.0.0.1/yii-advance/admin/';
+            this.apiHost = 'http://dev.befreecrm.com.au/yiiapp/pbackend/web';
         } else {
            // this.apiHost = 'http://api.smsfrecords.local/admin';
-            this.apiHost = 'http://dev.befreecrm.com.au/yiiapp/pbackend/web/user';
+            this.apiHost = 'http://dev.befreecrm.com.au/yiiapp/pbackend/web';
         }
     }
 

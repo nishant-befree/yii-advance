@@ -1,47 +1,53 @@
 import { Component, OnInit} from '@angular/core';
 declare var $;
-import { HttpService } from './../services/http.service';
+import { PracticeService } from './../services/practice.service';
+import { UserService } from './../services/user.service';
+import { Practice } from './../services/practice';
 @Component({
     selector: 'app-practice-list',
     templateUrl: './practice-list.html',
-    providers: [HttpService]
+    providers: [PracticeService]
 })
 export class PracticeListComponent {
 
-    title = 'Simple Server side Angular 2 pagination';
-    users = [];
-    totalItem:Number = 0;
+    private _errorMessage:string;
+
+    private _mode:string = '';
+    private _practice:Practice;
+
+    public userData:any = {};
 
     constructor(
-        private httpService : HttpService
+        private _practiceService : PracticeService,private  _userService : UserService
     ){
-        this.getServerData(1);
+        this.getPracticePR();
         setTimeout(function () {
             $(function () {
                 $('#myTable').DataTable();
             })
-        },2000);
+        },5000);
     }
     ngOnInit(): void {
 
 
     }
-    public getServerData(event){
-        this.httpService.getdata(event).subscribe(
-            response =>{
-                if(response.error) {
-                    alert('Server Error');
-                } else {
-                    console.log(response);
-                    this.users = response;
-                    this.totalItem =10;
+    public getPracticePR(){
+        this._practiceService.practicePR()
+            .subscribe(
+                practice => {
+                    console.log(practice);
+                    this._practice = practice;
+                },
+                error => {
+                    // unauthorized access
+                    if(error.status == 401 || error.status == 403) {
+                        this._userService.unauthorizedAccess(error);
+                    } else {
+                        this._errorMessage = error.data.message;
+                    }
                 }
-            },
-            error =>{
-                alert('Server error');
-            }
-        );
-        return event;
+            );
     }
+
 
 }

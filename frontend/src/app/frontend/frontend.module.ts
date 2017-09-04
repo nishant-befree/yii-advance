@@ -11,6 +11,8 @@ import { ForgotpasswordComponent } from './user-authentication/forgotpassword/fo
 import { ForgotpasswordRequestComponent } from './user-authentication/forgotpassword_request/forgotpassword_request.component';
 import {FullLayoutComponent} from './layouts/full-layout.component';
 import {SimpleLayoutComponent}  from './layouts/simple-layout.component';
+import {SidebarComponent} from './layouts/sidebar/sidebar.component';
+import {TopbarComponent}  from './layouts/topbar/topbar.component';
 // Model & Services
 import { AuthGuard } from './services/auth.guard';
 import { GlobalService } from './services/global.service';
@@ -25,7 +27,9 @@ import { SharedModule } from './shared/shared.module';
         ForgotpasswordComponent,
         ForgotpasswordRequestComponent,
         FullLayoutComponent,
-        SimpleLayoutComponent
+        SimpleLayoutComponent,
+        TopbarComponent,
+        SidebarComponent
     ],
     imports: [
         CommonModule,
