@@ -1,0 +1,19 @@
+<div class="smsf-search-bar" [ngClass]="{'expanded':!collapsed}" fxFlex="0 1 auto">
+    <div [ngClass]="toolbarColor" fxLayout="row" fxLayoutAlign="start center" fxFlex>
+        <label for="smsf-search-bar-input">
+            <button md-icon-button class="smsf-search-bar-expander" aria-label="Expand Search Bar" (click)="expand()"
+                    *ngIf="collapsed">
+                <md-icon class="s-24">search</md-icon>
+            </button>
+
+        </label>
+
+        <input id="smsf-search-bar-input" class="ml-24" type="text" placeholder="Search" (input)="search($event)" fxFlex>
+
+        <button md-icon-button class="smsf-search-bar-collapser md-icon-button" (click)="collapse()"
+                aria-label="Collapse Search Bar">
+            <md-icon class="s-24">close</md-icon>
+        </button>
+
+    </div>
+</div>

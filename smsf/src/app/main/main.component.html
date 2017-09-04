@@ -1,0 +1,55 @@
+<md-sidenav-container>
+
+    <div id="smsf-main-content" fxFlexFill>
+
+        <!-- TOOLBAR: Above -->
+        <ng-container *ngIf="smsfSettings.layout.toolbar === 'above'">
+            <smsf-toolbar class="above" [class]="smsfSettings.colorClasses.toolbar"></smsf-toolbar>
+        </ng-container>
+        <!-- / TOOLBAR: Above -->
+
+        <div id="wrapper">
+            <smsf-navbar [folded]="false"
+                         class="left-navbar"
+                         *ngIf="smsfSettings.layout.navigation === 'left'"
+                         [class]="smsfSettings.colorClasses.navbar">
+            </smsf-navbar>
+
+            <div class="content-wrapper">
+
+                <!-- TOOLBAR: Below -->
+                <ng-container *ngIf="smsfSettings.layout.toolbar === 'below'">
+                    <smsf-toolbar class="below" [class]="smsfSettings.colorClasses.toolbar"></smsf-toolbar>
+                </ng-container>
+                <!-- / TOOLBAR: Below -->
+
+                <smsf-content></smsf-content>
+
+                <!-- FOOTER: Below -->
+                <ng-container *ngIf="smsfSettings.layout.footer === 'below'">
+                    <smsf-footer class="below" [class]="smsfSettings.colorClasses.footer"></smsf-footer>
+                </ng-container>
+                <!-- / FOOTER: Below -->
+
+            </div>
+
+            <smsf-navbar [folded]="false" class="md-primary-700-bg right-navbar" *ngIf="smsfSettings.layout.navigation === 'right'"></smsf-navbar>
+
+        </div>
+
+        <!-- FOOTER: Above -->
+        <ng-container *ngIf="smsfSettings.layout.footer === 'above'">
+            <smsf-footer class="above" [class]="smsfSettings.colorClasses.footer"></smsf-footer>
+        </ng-container>
+        <!-- FOOTER: Above -->
+
+    </div>
+
+    <!-- QUICK PANEL -->
+    <md-sidenav smsfMdSidenavHelper="quick-panel" align="end">
+        <smsf-quick-panel></smsf-quick-panel>
+    </md-sidenav>
+    <!-- / QUICK PANEL -->
+
+</md-sidenav-container>
+
