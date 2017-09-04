@@ -1,0 +1,95 @@
+<button #openButton md-icon-button class="open-button md-primary-bg mat-elevation-z2" (click)="openBar()">
+    <md-icon>settings</md-icon>
+</button>
+
+<div #panel class="theme-options-panel md-white-bg mat-elevation-z2 pb-16">
+
+    <button md-icon-button class="close-button" (click)="closeBar()">
+        <md-icon>close</md-icon>
+    </button>
+
+    <md-list>
+        <h3 md-subheader>Navigation:</h3>
+        <md-list-item>
+            <md-radio-group [(ngModel)]="smsfSettings.layout.navigation" (ngModelChange)="onSettingsChange()">
+                <md-radio-button class="mr-8" value="left">Left</md-radio-button>
+                <md-radio-button class="mr-8" value="right">Right</md-radio-button>
+                <md-radio-button class="mr-8" value="none">None</md-radio-button>
+            </md-radio-group>
+        </md-list-item>
+
+        <h3 md-subheader>Toolbar:</h3>
+        <md-list-item>
+            <md-radio-group [(ngModel)]="smsfSettings.layout.toolbar" (ngModelChange)="onSettingsChange()">
+                <md-radio-button class="mr-8" value="below">Below</md-radio-button>
+                <md-radio-button class="mr-8" value="above">Above</md-radio-button>
+                <md-radio-button class="mr-8" value="none">None</md-radio-button>
+            </md-radio-group>
+        </md-list-item>
+
+        <h3 md-subheader>Footer:</h3>
+        <md-list-item>
+            <md-radio-group [(ngModel)]="smsfSettings.layout.footer" (ngModelChange)="onSettingsChange()">
+                <md-radio-button class="mr-8" value="below">Below</md-radio-button>
+                <md-radio-button class="mr-8" value="above">Above</md-radio-button>
+                <md-radio-button class="mr-8" value="none">None</md-radio-button>
+            </md-radio-group>
+        </md-list-item>
+
+        <md-divider></md-divider>
+
+        <h3 md-subheader>Colors:</h3>
+
+        <md-list-item>
+            <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+                <h4>Toolbar Color</h4>
+                <smsf-material-color-picker [(selectedClass)]="smsfSettings.colorClasses.toolbar" (onValueChange)="onSettingsChange()"></smsf-material-color-picker>
+            </div>
+        </md-list-item>
+
+        <md-list-item>
+            <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+                <h4>Navigation Bar Color</h4>
+                <smsf-material-color-picker [(selectedClass)]="smsfSettings.colorClasses.navbar" (onValueChange)="onSettingsChange()"></smsf-material-color-picker>
+            </div>
+        </md-list-item>
+
+        <md-list-item>
+            <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+                <h4>Footer Color</h4>
+                <smsf-material-color-picker [(selectedClass)]="smsfSettings.colorClasses.footer" (onValueChange)="onSettingsChange()"></smsf-material-color-picker>
+            </div>
+        </md-list-item>
+
+        <md-divider></md-divider>
+
+        <h3 md-subheader>Animation:</h3>
+
+        <md-list-item>
+            <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+                <h4>Router Animation</h4>
+                <md-select [(ngModel)]="smsfSettings.routerAnimation">
+                    <md-option value="none">
+                        None
+                    </md-option>
+                    <md-option value="slideUp">
+                        Slide up
+                    </md-option>
+                    <md-option value="slideDown">
+                        Slide down
+                    </md-option>
+                    <md-option value="slideRight">
+                        Slide right
+                    </md-option>
+                    <md-option value="slideLeft">
+                        Slide left
+                    </md-option>
+                    <md-option value="fadeIn">
+                        Fade in
+                    </md-option>
+                </md-select>
+            </div>
+        </md-list-item>
+
+    </md-list>
+</div>
