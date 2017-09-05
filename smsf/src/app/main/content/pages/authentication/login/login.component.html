@@ -26,7 +26,7 @@
             <div class="title">LOGIN TO YOUR ACCOUNT</div>
             <div class="description">Admin Login Description</div>
 
-            <form name="loginForm" [formGroup]="loginForm" novalidate>
+            <form name="loginForm" [formGroup]="loginForm" (ngSubmit)="submitForm(loginForm.value)" novalidate>
 
                 <md-input-container>
                     <input mdInput placeholder="Email" formControlName="email">
