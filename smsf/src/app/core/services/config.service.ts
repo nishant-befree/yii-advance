@@ -69,4 +69,6 @@ export class SMSFConfigService
         this.settings = Object.assign({}, this.settings, settings);
         this.onSettingsChanged.next(this.settings);
     }
+
+
 }

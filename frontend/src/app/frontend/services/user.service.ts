@@ -35,7 +35,7 @@ export class UserService {
 
         var val = this._authHttp
             .post(
-                this._globalService.apiHost + '/login/userlogin',
+                this._globalService.apiHost + 'user/login/userlogin',
                 JSON.stringify({
                     "LoginForm": {
                         "username": username,

@@ -22,7 +22,7 @@ import { SMSFIfOnDomDirective } from '../directives/smsf-if-on-dom/smsf-if-on-do
 import { SMSFMaterialColorPickerComponent } from '../components/material-color-picker/material-color-picker.component';
 import { Md2Module } from 'md2';
 import { CookieService } from 'ngx-cookie-service';
-
+import { AuthModule } from './auth.module';
 @NgModule({
     declarations   : [
         SMSFMdSidenavHelperDirective,
@@ -44,7 +44,8 @@ import { CookieService } from 'ngx-cookie-service';
         ColorPickerModule,
         NgxDnDModule,
         NgxDatatableModule,
-        Md2Module
+        Md2Module,
+        AuthModule
     ],
     exports        : [
         FlexLayoutModule,

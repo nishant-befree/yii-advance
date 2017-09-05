@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../../../../../core/modules/shared.module';
+import { AuthModule } from '../../../../../core/modules/auth.module';
 import { RouterModule } from '@angular/router';
 
 import { SMSFLoginComponent } from './login.component';
@@ -17,6 +18,7 @@ const routes = [
     ],
     imports     : [
         SharedModule,
+        AuthModule,
         RouterModule.forChild(routes)
     ]
 })

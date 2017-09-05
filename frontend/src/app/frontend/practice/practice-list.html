@@ -25,17 +25,52 @@
 
     </div>
 <my-datatable>Loading...</my-datatable>-->
-    <table id="myTable">
+<div class="page-header">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Practice</a></li>
+        <li class="active">Practice Response</li>
+    </ol>
+
+    <div class="page-header-actions">
+        <button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip"
+                data-original-title="Edit">
+            <i class="icon md-edit" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip"
+                data-original-title="Refresh">
+            <i class="icon md-refresh-alt" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-sm btn-icon btn-primary btn-round" data-toggle="tooltip"
+                data-original-title="Setting">
+            <i class="icon md-settings" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+<div class="page-content">
+    <!-- Panel -->
+    <div class="panel">
+        <div class="panel-body container-fluid">
+    <table id="myTable" class="cell-border" cellspacing="0" width="100%">
         <thead>
-        <tr>
-            <th>Name</th>
-            <th>Last name</th>
+        <tr role="row">
+            <th>PRACTICE NAME</th>
+            <th>JOB NAME</th>
+            <th>RESPONSE TIME LEFT</th>
+            <th>JOB TIME LEFT</th>
+            <th>PRIORITY</th>
+            <th>PQ COUNTER</th>
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor = ' let user of users' >
-            <td>{{user.user_fname}}</td>
-            <td>{{user.user_lname}}</td>
+        <tr *ngFor = ' let practicePR of _practice' role="row">
+            <td>{{practicePR.company_name}}</td>
+            <td>{{practicePR.job_name}}</td>
+            <td>{{practicePR.lessDate_string}}</td>
+            <td>{{practicePR.lessDate_string}}</td>
+            <td>{{practicePR.priority}}</td>
+            <td>{{practicePR.pendingcount}} {{practicePR.repliedcount1}} {{practicePR.repliedcount2}}</td>
         </tr>
         </tbody>
     </table>
+        </div></div></div>

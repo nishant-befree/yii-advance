@@ -1,0 +1,15 @@
+.sr-table-bordered {
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+.sr-table-bordered tr th {
+    line-height: 20px !important;
+    text-transform: uppercase;
+    vertical-align: text-top;
+    font-size: 13px;
+    color: #363f44;
+    font-weight: 700;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: #f3f3f3;
+}
