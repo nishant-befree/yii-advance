@@ -19,25 +19,15 @@ export class Assigned_taskComponent implements OnInit
     ];
     constructor(private http: Http)
     {
-        this.fetch((data) => {
-            // cache our list
-            this.temp = [...data];
 
-            // push our inital complete list
-            this.rows = data;
-        });
     }
 
-    fetch(data){
-
+    ngOnInit()
+    {
         this.http.get('http://dev.befreecrm.com.au/yiiapp/pbackend/web/bucket/bucket/assigntask')
             .subscribe(contacts => {
                 this.rows = contacts.json().data;
                 this.loadingIndicator = false;
             });
-    }
-    ngOnInit()
-    {
-        this.fetch(data);
     }
 }
